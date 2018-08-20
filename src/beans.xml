@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean name="person" class="com.wang.entity.Person" id="person">
+    <property name="name" value="John"/>
+    <property name="age" value="23"/>
+    <property name="favorites">
+    <list>
+        <value>sleep</value>
+        <value>eat</value>
+    </list>
+</property>
+<property name="friends">
+<map>
+<entry key="1" value="Tom"/>
+<entry key="2" value="Jerry"/>
+</map>
+</property>
+    </bean>
+</beans>
